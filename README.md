@@ -17,9 +17,9 @@ The first step of Onto2Vec is to process the ontolofy using OWL API and infer ne
  - If you want to use a different ontology:
   - open the file *OntoProcess.groovy* in editor
   - in line 
-  '''
+  ```
   IRI iri= IRI.create ("http://purl.obolibrary.org/obo/go.owl");
-  '''
+  ```
   replace the url with the link to owl version of the ontology you would like to use.
   
 ## Adding Annotation axioms 
