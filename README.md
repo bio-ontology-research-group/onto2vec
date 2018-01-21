@@ -93,6 +93,6 @@ Since the axions corpus is now ready, the only step left is to run Word2Vec to o
   This script will create a file with the vector representations of all classes in *AllClasses.lst*. This file, *VecResults.lst*, is the final and main output of Onto2Vec. 
 ## Data and Results
 As an example we are including in the directory *Data* , input and output files of Onto2Vec using GO.
-**totalaxioms.lst** contains all ontology structure axioms and annotation axioms from GO.
-**ProtClasses.lst** contains the list of proteins we were interested in getting vector representations for.  
-**VecResults** contains vector representations for the classes. 
+- **totalaxioms.lst** contains all ontology structure axioms and annotation axioms from GO.
+- **ProtClasses.lst** contains the list of proteins we were interested in getting vector representations for.  
+- **VecResults** contains vector representations for the classes. 
