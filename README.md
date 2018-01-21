@@ -15,12 +15,14 @@ The first step of Onto2Vec is to process the ontolofy using OWL API and infer ne
   ```
   The script should create two file in your directory: *classes.lst* which contains the set of classes in the ontology and  *axioms.lst* which contains all axioms from the ontology as well as the inferred ones
  - If you want to use a different ontology:
-  - open the file *OntoProcess.groovy* in editor
-  - in line 
-  ```
-  IRI iri= IRI.create ("http://purl.obolibrary.org/obo/go.owl");
-  ```
-  replace the url with the link to owl version of the ontology you would like to use.
+    - open the file *OntoProcess.groovy* in editor.
+    - in line:
+       ```
+       IRI iri= IRI.create ("http://purl.obolibrary.org/obo/go.owl");
+      ```
+   replace the url with the link to the owl version of the ontology you would like to use.
+    -PLease note that the file uses teh reasoner to automatically infer axioms of type *SubClass*, *Equivalent* and *Disjoint*. You may need to change that depending on the axioms available in your ontology and what type of axioms you would like to infer.
+  
   
 ## Adding Annotation axioms 
 ## Representation Learning 
