@@ -10,9 +10,9 @@ The first step of Onto2Vec is to process the ontolofy using OWL API and infer ne
 - In this directory paste the file *OntoProcess.groovy*.
 - If you want to use the GO ontology:
   - Open the terminal and run 
-  ```
-  groovy OntoProcess.groovy
-  ```
+    ```
+    groovy OntoProcess.groovy
+    ```
   The script should create two files in your directory: *classes.lst*  which contains the set of classes in the ontology, and  *axioms.lst*  which contains all axioms from the ontology including the inferred ones.
  - If you want to use a different ontology:
     - Open the file *OntoProcess.groovy* in editor.
@@ -34,12 +34,13 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
     ```
     my $database="Enter Path Here";
     ```
-      by replacing *Enter Path Here* with the path to the file where the annotations file you downloaded.
+      by replacing *Enter Path Here* with the path to the annotation file you downloaded.
   - Open the terminal and run
     ```
     perl getAnnotations.pl 
     ```
-    This script should create a file called *annotations.lst* with all experimental annotation axioms using *hasFunction* as teh relation between proteins and their functions.
+    This script should create a file called *annotations.lst* with all experimental annotation axioms using *hasFunction* as the relation between proteins and their functions . 
+    - The 
     
   
 ## Representation Learning 
