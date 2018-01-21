@@ -70,14 +70,14 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
        ```
        by replacing *IEA* and *nd* with the evidence codes you want to filter (if there are any). Or you can comment the if statement and get all the annotaions in the file.
        - Open the terminal and run
-         ```
-         perl getAnnotations.pl 
-         ```
+        ```
+        perl getAnnotations.pl 
+        ```
       The obtained file *annotationAxiom.lst* should have the annotation axioms you added.
         - To merge the ontology axioms with the annotation axioms in one corpus, open the terminal and run
-           ```
-            cat axioms.lst annotationAxiom.lst > AllAxioms.lst
-           ```
+          ```
+          cat axioms.lst annotationAxiom.lst > AllAxioms.lst
+          ```
   
 ## Representation Learning 
 ## Data and Results
