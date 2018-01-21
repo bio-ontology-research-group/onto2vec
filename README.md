@@ -72,7 +72,7 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
        - Open the terminal and run
          ```
          perl getAnnotations.pl 
-        ````
+        ```
        The obtained file *annotationAxiom.lst* should have the annotation axioms you added.
         - To merge the ontology axioms with the annotation axioms in one corpus, open the terminal and run
            ```
