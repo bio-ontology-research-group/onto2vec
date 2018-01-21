@@ -24,6 +24,23 @@ The first step of Onto2Vec is to process the ontolofy using OWL API and infer ne
    - Please note that the file uses the reasoner to automatically infer axioms of type *SubClass*, *Equivalent* and *Disjoint*. You may need to change that depending on the axioms available in your ontology and what type of axioms you would like to infer.
   
   
-## Adding Annotation axioms 
+## Adding Annotation axioms
+The second step of Onto2Vec is to add annotation axioms to our corpus of axioms. This can be easily done using some simple text mining code without using the OWL API sice there is no needed owl processing. 
+- If you are using GO ontology you can add the annotation axioms as follows:
+  - Download the GOA annotation file from ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/ and save it to the *Onto2Vec* directory. For copyright reasons, we do not include the annotation file in this package. 
+  - Save the file *getAnnotations.pl* in the *Onto2Vec* directory.
+  - Open the file *getAnnotations.pl* in editor.
+  - Edit the following line:
+    ```
+    my $database="Enter Path Here";
+    ```
+      by replacing *Enter Path Here* with the path to the file where the annotations file you downloaded.
+  - Open the terminal and run
+    ```
+    perl getAnnotations.pl 
+    ```
+    This script should create a file called *annotations.lst* with all experimental annotation axioms using *hasFunction* as teh relation between proteins and their functions.
+    
+  
 ## Representation Learning 
 ## Data and Results
