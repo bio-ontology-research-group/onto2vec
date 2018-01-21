@@ -95,6 +95,6 @@ Since the axioms corpus is now ready, the only step left is to run Word2Vec to o
 As an example we are including examples of input and output files of Onto2Vec using GO.
 - **totalaxioms.lst** contains ontology structure axioms and annotation axioms from GO.
 - **ProtClasses.lst** contains the list of proteins we were interested in getting vector representations for.  
-- **VecResults.lst** contains vector representations for the classes. 
+- **VecResults.lst** contains vector representations for the proteins. 
 ## Final notes
 For any comments or help needed with how to run Onto2Vec, please send an email to: fzohrasmaili@gmail.com
