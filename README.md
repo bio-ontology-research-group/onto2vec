@@ -80,4 +80,19 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
          ```
   
 ## Representation Learning 
+Since the axions corpus is now ready, the only step left is to run Word2Vec to obtain the representation vectors in two steps:
+- The first step is to obtain the entities we would like to get the feature vectors for. To get the vectors for all classes, open the terminal and run
+  ```
+  perl getClasses.pl
+  ```
+  This script will create a file ,*AllClasses.lst*, with the list of all classes in it. You can easily edit the perl file *getClasses.pl* to only keep the classes ou are interested in.
+  - The second and last step is to run Word2Vec on the corpus. To do that, open the terminal and run
+  ```
+  python runWord2vec.py
+  ```
+  This script will create a file with the vector representations of all classes in *AllClasses.lst*. This file, *VecResults.lst*, is the final and main output of Onto2Vec. 
 ## Data and Results
+As an example we are including in the directory *Data* , input and output files of Onto2Vec using GO.
+**totalaxioms.lst** contains all ontology structure axioms and annotation axioms from GO.
+**ProtClasses.lst** contains the list of proteins we were interested in getting vector representations for.  
+**VecResults** contains vector representations for the classes. 
