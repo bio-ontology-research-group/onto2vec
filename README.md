@@ -20,8 +20,8 @@ The first step of Onto2Vec is to process the ontolofy using OWL API and infer ne
        ```
        IRI iri= IRI.create ("http://purl.obolibrary.org/obo/go.owl");
       ```
-   by replacing the url with the link to the owl version of the ontology you would like to use.
-    -PLease note that the file uses the reasoner to automatically infer axioms of type *SubClass*, *Equivalent* and *Disjoint*. You may need to change that depending on the axioms available in your ontology and what type of axioms you would like to infer.
+    by replacing the url with the link to the owl version of the ontology you would like to use.
+   - Please note that the file uses the reasoner to automatically infer axioms of type *SubClass*, *Equivalent* and *Disjoint*. You may need to change that depending on the axioms available in your ontology and what type of axioms you would like to infer.
   
   
 ## Adding Annotation axioms 
