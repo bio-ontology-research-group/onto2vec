@@ -7,21 +7,21 @@ Onto2Vec implementation uses groovy, python and perl. No other programs are requ
 ## OWL Processing 
 The first step of Onto2Vec is to process the ontolofy using OWL API and infer new axioms using a reasoner. 
 - Create a new directory and name it *Onto2Vec*.
-- In this directory paste the file *OntoProcess.groovy*
+- In this directory paste the file *OntoProcess.groovy*.
 - If you want to use the GO ontology:
-  - open terminal and run 
+  - Open the terminal and run 
   ```
   groovy OntoProcess.groovy
   ```
-  The script should create two file in your directory: *classes.lst* which contains the set of classes in the ontology and  *axioms.lst* which contains all axioms from the ontology as well as the inferred ones
+  The script should create two files in your directory: *classes.lst*  which contains the set of classes in the ontology, and  *axioms.lst*  which contains all axioms from the ontology including the inferred ones.
  - If you want to use a different ontology:
-    - open the file *OntoProcess.groovy* in editor.
-    - in line:
+    - Open the file *OntoProcess.groovy* in editor.
+    - Edit the following line:
        ```
        IRI iri= IRI.create ("http://purl.obolibrary.org/obo/go.owl");
       ```
-   replace the url with the link to the owl version of the ontology you would like to use.
-    -PLease note that the file uses teh reasoner to automatically infer axioms of type *SubClass*, *Equivalent* and *Disjoint*. You may need to change that depending on the axioms available in your ontology and what type of axioms you would like to infer.
+   by replacing the url with the link to the owl version of the ontology you would like to use.
+    -PLease note that the file uses the reasoner to automatically infer axioms of type *SubClass*, *Equivalent* and *Disjoint*. You may need to change that depending on the axioms available in your ontology and what type of axioms you would like to infer.
   
   
 ## Adding Annotation axioms 
