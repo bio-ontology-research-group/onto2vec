@@ -56,7 +56,7 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
       ```
       cat axioms.lst  > AllAxioms.lst
       ```
-    - If you would like to include the annotation axioms, do teh following:
+    - If you would like to include the annotation axioms, do the following:
       - Upload and save the annotation file corresponding to the ontology you are using in the *Onto2Vec* directory.
       - Open the file *getAnnotations.pl* in editor.
       - Edit the following line:
@@ -69,7 +69,7 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
        if ($line !~"IEA" and $line !~" nd " )
        ```
        by replacing *IEA* and *nd* with the evidence codes you want to filter (if there are any). Or you can comment the if statement and get all the annotaions in the file.
-       -  - Open the terminal and run
+       - Open the terminal and run
          ```
          perl getAnnotations.pl 
         ````
