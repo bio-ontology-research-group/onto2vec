@@ -80,7 +80,7 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
          ```
   
 ## Representation Learning 
-Since the axions corpus is now ready, the only step left is to run Word2Vec to obtain the representation vectors in two steps:
+Since the axioms corpus is now ready, the only step left is to run Word2Vec to obtain the representation vectors in two steps:
 - The first step is to obtain the entities we would like to get the feature vectors for. To get the vectors for all classes, open the terminal and run
   ```
   perl getClasses.pl
