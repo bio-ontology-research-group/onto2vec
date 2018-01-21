@@ -39,8 +39,18 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
     ```
     perl getAnnotations.pl 
     ```
-    This script should create a file called *annotations.lst* with all experimental annotation axioms using *hasFunction* as the relation between proteins and their functions . 
-    - The 
+    This script should create a file called *annotationAxiom.lst* with all experimental annotation axioms using *hasFunction* as the relation between proteins and their functions . 
+   - To make sure the annotation axioms are complete, we need to propagate the annotations up in the GO DAG.To do that save the file *AddAncestors.pl* to the *Onto2Vec* directory.
+   - Open the terminal and run 
+    ```
+       perl AddAncestors.pl
+    ```
+    The file *annotationAxiom.lst* should now be complete and includes all the needed annotation axioms. 
+    - At this point, the GO ontology axioms and the annotation axioms needs to be merged into one corpus. To do that, open the terminal in the *Onto2Vec* directory and run:
+      ```
+      cat axioms.lst annotationAxiom.lst > AllAxioms.lst
+      ```
+      
     
   
 ## Representation Learning 
