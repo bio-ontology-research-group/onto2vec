@@ -77,7 +77,7 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
         - To merge the ontology axioms with the annotation axioms in one corpus, open the terminal and run
            ```
             cat axioms.lst annotationAxiom.lst > AllAxioms.lst
-      `    ```
+           ```
   
 ## Representation Learning 
 ## Data and Results
