@@ -5,7 +5,7 @@ This is a detailed documentation on how to use Onto2Vec to produce ontology-base
 ## Prerequisites
 Onto2Vec implementation uses groovy, python and perl. No other programs are required to run it.
 ## OWL Processing 
-The first step of Onto2Vec is to process the ontolofy using OWL API and infer new axioms using a reasoner. 
+The first step of Onto2Vec is to process the ontology using OWL API and infer new axioms using a reasoner. 
 - Create a new directory and name it *Onto2Vec*.
 - In this directory paste the file *OntoProcess.groovy*.
 - If you want to use the GO ontology:
@@ -52,7 +52,7 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
       ```
  - If you are using a different biomedical ontology:
    - If you do not need to add annotation axioms (Onto2Vec can work without annotation axioms)
-      - Open the terminal in the *Onto2Vec* directory and run:
+      - Open the terminal in the *Onto2Vec* directory and run
       ```
       cat axioms.lst  > AllAxioms.lst
       ```
@@ -73,7 +73,11 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
          ```
          perl getAnnotations.pl 
         ````
-    
+        The obtained file *annotationAxiom.lst* should have the annotation axioms you added.
+        - To merge the ontology axioms with the annotation axioms in one corpus, open the terminal and run
+           ```
+            cat axioms.lst annotationAxiom.lst > AllAxioms.lst
+      `    ```
   
 ## Representation Learning 
 ## Data and Results
