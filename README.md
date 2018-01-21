@@ -86,7 +86,7 @@ Since the axions corpus is now ready, the only step left is to run Word2Vec to o
   perl getClasses.pl
   ```
   This script will create a file ,*AllClasses.lst*, with the list of all classes in it. You can easily edit the perl file *getClasses.pl* to only keep the classes ou are interested in.
-  - The second and last step is to run Word2Vec on the corpus. To do that, open the terminal and run
+- The second and last step is to run Word2Vec on the corpus. To do that, open the terminal and run
   ```
   python runWord2vec.py
   ```
