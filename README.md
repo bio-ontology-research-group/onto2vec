@@ -26,7 +26,7 @@ The first step of Onto2Vec is to process the ontology using OWL API and infer ne
   
 ## Adding Annotation axioms
 The second step of Onto2Vec is to add annotation axioms to our corpus of axioms. This can be easily done using some simple text mining code without using the OWL API sice there is no needed owl processing. 
-- If you are using GO ontology you can add the annotation axioms as follows:
+- If you are using GO ontology you can add the annotation axioms by following these steps:
   - Download the GOA annotation file from ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/ and save it to the *Onto2Vec* directory. For copyright reasons, we do not include the annotation file in this package. 
   - Save the file *getAnnotations.pl* in the *Onto2Vec* directory.
   - Open the file *getAnnotations.pl* in editor.
