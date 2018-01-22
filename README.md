@@ -66,9 +66,9 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
        by replacing *Enter Path Here* with the path to the annotation file you downloaded.
        - Edit the line :
        ```
-       if ($line !~" IEA " and $line !~" nd " )
+       if ($line !~" IEA " and $line !~" ND " )
        ```
-       by replacing *IEA* and *nd* with the evidence codes you want to filter (if there are any). Or you can comment the if statement and get all the annotaions in the file.
+       by replacing *IEA* and *ND* with the evidence codes you want to filter (if there are any). Or you can comment the if statement and get all the annotaions in the file.
        - Open the terminal and run
         ```
         perl getAnnotations.pl 
