@@ -45,10 +45,10 @@ The second step of Onto2Vec is to add annotation axioms to our corpus of axioms.
       ```
        perl AddAncestors.pl
       ```
-    The file *annotationAxiom.lst* should now be complete and includes all the needed annotation axioms. 
+    A file *annotationAxiomFinal.lst* should now be create and should include all the needed annotation axioms. 
     - At this point, the GO ontology axioms and the annotation axioms needs to be merged into one corpus. To do that, open the terminal in the *Onto2Vec* directory and run:
       ```
-      cat axioms.lst annotationAxiom.lst > AllAxioms.lst
+      cat axioms.lst annotationAxiomFinal.lst > AllAxioms.lst
       ```
  - If you are using a different biomedical ontology:
    - If you do not need to add annotation axioms (Onto2Vec can work without annotation axioms)
