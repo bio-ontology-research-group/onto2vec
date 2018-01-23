@@ -85,7 +85,7 @@ Since the axioms corpus is now ready, the only step left is to run Word2Vec to o
   ```
   perl getClasses.pl
   ```
-  This script will create a file ,*AllClasses.lst*, with the list of all classes in it. You can easily edit the perl file *getClasses.pl* to only keep the classes you are interested in such as only the annotated entities or so.
+  This script will create a file, *AllClasses.lst*, with the list of all classes in it. You can easily edit the perl file *getClasses.pl* to only keep the classes you are interested in such as only the annotated entities or so.
 - The second and last step is to run Word2Vec on the corpus. To do that, copy and paste *runWord2Vec.py* in the *Onto2Vec* directory and open the terminal and run
   ```
   python runWord2Vec.py
