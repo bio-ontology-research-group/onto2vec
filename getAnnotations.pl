@@ -16,7 +16,7 @@ $line =<$file>;
 while ( $line = <$file>)
 {
 	chomp ($line);
-	if ($line !~"	IEA" and $line !~"	ND" )
+	if ($line !~"	IEA	" and $line !~"	ND	" )
 	#if ($line !~" IEA " and $line !~"	ND" )
 	{
 		#print ("GOT HERE !\n");
