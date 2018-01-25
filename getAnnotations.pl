@@ -7,7 +7,7 @@ chomp ($path);
 my $workdir= $path;
 my %map = ();
 my @uniprot=();
-my $database="myfile.lst";
+my $database="Enter Path Here";
 my $filename= "$path/annotationAxiom.lst";
 open (my $file, "$database");
 open (my $fh, '>>',"$filename")or die "Could not open file '$filename' $!";
