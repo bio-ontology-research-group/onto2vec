@@ -167,11 +167,11 @@ for (OWLClass class1 : classes)
     }
 }
 
-BufferedReader br = new BufferedReader(new FileReader("ProtClasses.lst")) ;
-    String line;
-    while ((line = br.readLine()) != null) {
-	String newclass=line.trim ();// process the line.
-	OWLClass c=factory.getOWLClass(IRI.create(newclass));
-	OWLAxiom declarec=factory.getOWLdeclaratiomAxiom(c);
-	manager.addAxiom(GOOntology,declarec);
-    }
+//BufferedReader br = new BufferedReader(new FileReader("ProtClasses.lst")) ;
+  //  String line;
+    //while ((line = br.readLine()) != null) {
+	//String newclass=line.trim ();// process the line.
+	//OWLClass c=factory.getOWLClass(IRI.create(newclass));
+	//OWLAxiom declarec=factory.getOWLdeclaratiomAxiom(c);
+	//manager.addAxiom(GOOntology,declarec);
+    //}
