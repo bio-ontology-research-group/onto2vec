@@ -139,8 +139,8 @@ println ("Number of axioms is : "+ numaxiom);
 OWLObjectRenderer renderer =new ManchesterOWLSyntaxOWLObjectRendererImpl ();
 //Infer subclass/equivalent/disjoint axioms using reasoner
 InferredSubClassAxiomGenerator generator = new InferredSubClassAxiomGenerator();
-InferredDisjointClassesAxiomGenerator generatordis = new  InferredDisjointClassesAxiomGenerator();
-InferredEquivalentClassAxiomGenerator generatequi = new  InferredEquivalentClassAxiomGenerator();
+//InferredDisjointClassesAxiomGenerator generatordis = new  InferredDisjointClassesAxiomGenerator();
+//InferredEquivalentClassAxiomGenerator generatequi = new  InferredEquivalentClassAxiomGenerator();
 Set<OWLAxiom> axioms = generator.createAxioms(factory, reasoner);
 //Set<OWLAxiom> dis_axioms=generatordis.createAxioms(factory, reasoner);
 //Set<OWLAxiom> equ_axioms=generatequi.createAxioms(factory,reasoner);
