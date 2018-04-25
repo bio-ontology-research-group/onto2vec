@@ -149,8 +149,7 @@ manager.addAxioms(GOOntology,axioms);
 //manager.addAxioms(GOOntology,equ_axioms);
 int numaxiom1= GOOntology.getAxiomCount();
 println ("Number of axioms is : "+ numaxiom1);
-//int x=axioms.size();
-println ("Set of size: "+x);
+
 //Iterate through all classes of ontology
 Set<OWLClass> classes=GOOntology.getClassesInSignature();
 FileWriter fw= new FileWriter ("axioms.lst",true); BufferedWriter bw =new BufferedWriter (fw); PrintWriter out =new PrintWriter (bw);
