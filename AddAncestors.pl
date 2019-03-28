@@ -30,9 +30,9 @@ while (my $line =<FH>)
 				my $goAnces=$2;
 				if ($checkgo eq $childGO)
 				{
-				my$newline= "$prot hasFunction $goAnces\n";
-				push @temparray, my$newline;
-				print ("Found two \n");
+				my$newline= "$prot hasFunction $goAnces";
+				push @temparray, $newline;
+				#print ("Found two \n");
 				}
 
 			}
